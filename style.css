@@ -74,54 +74,54 @@
 }
 
 .grid-container1 > div {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .grid-div0 {
-		border: solid black;
-		border-bottom: solid white;
-		padding: 1px;
-		border-width: 1px;
+	border: solid black;
+	border-bottom: solid white;
+	padding: 1px;
+	border-width: 1px;
 }
 
 .grid-div1 {
-		border: solid black;
-		padding: 1px;
-		border-width: 1px;
+	border: solid black;
+	padding: 1px;
+	border-width: 1px;
 }
 
 .grid-div2 {
-		border-left: solid black;
-		padding: 1px;
-		border-width: 1px;
+	border-left: solid black;
+	padding: 1px;
+	border-width: 1px;
 }
 
 .grid-div3 {
-		border-right: solid black;
-		padding: 1px;
-		border-width: 1px;
+	border-right: solid black;
+	padding: 1px;
+	border-width: 1px;
 }
 
 .grid-div4 {
-		border: solid black;
-		border-top: solid white;
-		padding: 1px;
-		border-width: 1px;
+	border: solid black;
+	border-top: solid white;
+	padding: 1px;
+	border-width: 1px;
 }
 
 .grid-div5 {
-		border-left: solid black;
-		border-right: solid black;
-		padding: 1px;
-		border-width: 1px;
+	border-left: solid black;
+	border-right: solid black;
+	padding: 1px;
+	border-width: 1px;
 }
 
 .grid-div6 {
-		border-bottom: solid black;
-		padding: 1px;
-		border-width: 1px;
+	border-bottom: solid black;
+	padding: 1px;
+	border-width: 1px;
 }
 
 .grid-cursor {
@@ -129,9 +129,9 @@
 }
 
 .grid-container2 > div {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .blank1 {
@@ -213,7 +213,6 @@
 }
 
 .itsize1 {
-	
 	height: 95%;
 }
 
