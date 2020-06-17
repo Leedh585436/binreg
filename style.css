@@ -118,6 +118,12 @@
 		border-width: 1px;
 }
 
+.grid-div6 {
+		border-bottom: solid black;
+		padding: 1px;
+		border-width: 1px;
+}
+
 .grid-cursor {
 	cursor: pointer;
 }
@@ -186,6 +192,22 @@
 	grid-area: 3/1/3/span 2;
 }
 
+.itinf1 {
+	grid-area: 4/1/4/span 2;
+}
+
+.itinf2 {
+	grid-area: 1/1/span 2/span 5;
+}
+
+.itinf3 {
+	grid-area: 1/6/span 2/span 2;
+}
+
+.itinf4 {
+	grid-area: 3/3/span 2/span 3;
+}
+
 .itsize1 {
 	
 	height: 95%;
@@ -203,4 +225,8 @@
 .itsize4 {
 	height: 100%;
 	width: 100%;
+}
+
+.itsize5 {
+	width: 90%;
 }
