@@ -197,7 +197,7 @@
 			if (value == "r") {
 				$('#img5').attr('src','Images/b20.jpg');
 				document.getElementById('btn5').setAttribute('data-value','l');
-			} else {
+			} else if (value == "l") {
 				$('#img5').attr('src','Images/b19.jpg');
 				document.getElementById('btn5').setAttribute('data-value','r');
 			}
