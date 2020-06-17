@@ -170,7 +170,7 @@
 		});
 
 		$('#ic3').click(function(){
-			open(cam.md,_self);
+			window.open('cam.md','_self');
 		});
 
 	});

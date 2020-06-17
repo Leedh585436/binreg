@@ -89,7 +89,7 @@
 		});
 
 		$('#ic1').click(function(){
-			open(index.md,_self);
+			window.open('index.md','_self');
 		});
 
 	});
