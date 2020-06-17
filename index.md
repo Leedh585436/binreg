@@ -169,5 +169,9 @@
 			}
 		});
 
+		$('#ic3').click(function(){
+			open(cam.md,_self);
+		});
+
 	});
 </script>
