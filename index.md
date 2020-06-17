@@ -48,7 +48,7 @@
 				<div class="grid-div1 grid-cursor" id="btn16"><img class="itsize1" id="img16" src="Images/b31.jpg"></div>
 				<div class="grid-div1 grid-cursor" id="btn17"><img class="itsize1" id="img17" src="Images/b32.jpg"></div>
 				<div class="grid-div1" id="btn18"></div>
-				<div class="grid-div1 grid-cursor" id="btn19"><img class="itsize1" id="img19" src="Images/b09.jpg"></div>
+				<div class="grid-div1" id="btn19"><img class="itsize1" id="img19" src="Images/b09.jpg"></div>
 				<div class="grid-off grid-div1 grid-cursor" id="btn20"><img class="itsize1" src="Images/b36.jpg"></div>
 				<div class="itemscreen grid-div1" id="screen"><img class="itsize4" id="imscreen" src="Images/bin6.jpg"></div>
 			</div>
