@@ -194,12 +194,14 @@
 		});
 		$('#btn5').click(function(){
 			var value = document.getElementById('btn5').getAttribute('data-value');
-			if (value == "r") {
-				$('#img5').attr('src','Images/b20.jpg');
-				document.getElementById('btn5').setAttribute('data-value','l');
-			} else if (value == "l") {
-				$('#img5').attr('src','Images/b19.jpg');
-				document.getElementById('btn5').setAttribute('data-value','r');
+			if (value !== "disr" && value !== "disl") {
+				if (value == "r") {
+					$('#img5').attr('src','Images/b20.jpg');
+					document.getElementById('btn5').setAttribute('data-value','l');
+				} else {
+					$('#img5').attr('src','Images/b19.jpg');
+					document.getElementById('btn5').setAttribute('data-value','r');
+				}
 			}
 		});
 		$('#btn13').click(function(){
