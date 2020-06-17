@@ -1,4 +1,29 @@
-@media screen and (min-width: 720px){
+@media screen and (min-width: 960px){
+	.grid-container1 {
+		display: grid;
+		grid-gap: 0px;
+		grid-template-columns: repeat(12,80px);
+		grid-template-rows: repeat(2,60px);
+	}
+
+	.grid-container2{
+		display: grid;
+		grid-gap: 0px;
+		grid-template-rows: repeat(4,120px);
+		grid-template-columns: repeat(8,120px);
+	}
+
+	.texts {
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.divmar {
+		margin-top: 28px;
+	}
+}
+
+@media screen and (min-width: 720px) and (max-width: 959px){
 	.grid-container1 {
 		display: grid;
 		grid-gap: 0px;
