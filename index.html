@@ -37,7 +37,7 @@
 				<div class="grid-div1" id="btn7"><img class="itsize1" id="img7" src="Images/b14.jpg"></div>
 				<div class="grid-div1 grid-cursor" id="btn8"><img class="itsize1" src="Images/b33.jpg"></div>
 				<div class="grid-div1 grid-cursor" id="btn9" data-value="dis0"><img class="itsize1" id="img9" src="Images/b61.jpg"></div>
-				<div class="grid-bar grid-div4" id="btn10"><img class="itsize3" src="Images/bin4.jpg"></div>
+				<div class="grid-bar grid-div4" id="btn10"><img class="itsize3" id="img10" src="Images/bin4.jpg"></div>
 				<div class="grid-div1" id="btn11"><img class="itsize1" id="img11" src="Images/b18.jpg"></div>
 				<div class="grid-div1 grid-cursor" id="btn12"><img class="itsize1" src="Images/b35.jpg"></div>
 				<div class="grid-div1 grid-cursor" id="btn13" data-value="col"><img class="itsize1" id="img13" src="Images/b26.jpg"></div>
@@ -48,7 +48,7 @@
 				<div class="grid-div1" id="btn18"></div>
 				<div class="grid-div1" id="btn19"><img class="itsize1" id="img19" src="Images/b09.jpg"></div>
 				<div class="grid-off grid-div1 grid-cursor" id="btn20"><img class="itsize1" src="Images/b36.jpg"></div>
-				<div class="itemscreen grid-div1" id="screen"><img class="itsize4" id="imscreen" src="Images/bin6.jpg"></div>
+				<div class="itemscreen grid-div1" id="screen" data-value="col" data-value2="act"><img class="itsize4" id="imscreen" src="Images/bin6.jpg"></div>
 			</div>
 		</div>
 	</div>
@@ -82,7 +82,7 @@
 				<div class="grid-div1 grid-cursor" id="btna13" data-value="col"><img class="itsize1" id="imga13" src="Images/b26.jpg"></div>
 				<div class="grid-div1 grid-cursor" id="btna14"><img class="itsize1" id="imga14" src="Images/b46.jpg"></div>
 				<div class="grid-off grid-div1 grid-cursor" id="btna15"><img class="itsize1" src="Images/b36.jpg"></div>
-				<div class="itemscreen grid-div1" id="screen"><img class="itsize4" id="imascreen" src="Images/bin6.jpg"></div>
+				<div class="itemscreen grid-div1" id="screena"><img class="itsize4" id="imascreen" src="Images/bin6.jpg"></div>
 			</div>
 		</div>
 	</div>
@@ -206,14 +206,21 @@
 		});
 		$('#btn13').click(function(){
 			var value = document.getElementById('btn13').getAttribute('data-value');
+			var screenval = document.getElementById('screen').getAttribute('data-value2');
 			if (value == "col") {
 				$('#img13').attr('src','Images/b27.jpg');
-				$('#imscreen').attr('src','Images/bin7.jpg');
+				if (screenval == "act") {
+					$('#imscreen').attr('src','Images/bin7.jpg');
+				}
 				document.getElementById('btn13').setAttribute('data-value','blk');
+				document.getElementById('screen').setAttribute('data-value','blk');
 			} else {
 				$('#img13').attr('src','Images/b26.jpg');
-				$('#imscreen').attr('src','Images/bin6.jpg');
+				if (screenval == "act") {
+					$('#imscreen').attr('src','Images/bin6.jpg');
+				}
 				document.getElementById('btn13').setAttribute('data-value','col');
+				document.getElementById('screen').setAttribute('data-value','col');
 			}
 		});
 		$('#mode1').click(function(){
@@ -284,12 +291,23 @@
 
 		$('#btnc3').click(function(){
 			var value = document.getElementById('btnc3').getAttribute('data-value');
+			var screenval = document.getElementById('screen').getAttribute('data-value');
 			if (value == "on") {
 				$('#imgc3').attr('src','Images/b63.jpg');
+				$('#imscreen').attr('src','Images/bin9.jpg');
+				$('#img10').attr('src','Images/bin8.jpg');
 				document.getElementById('btnc3').setAttribute('data-value','off');
+				document.getElementById('screen').setAttribute('data-value2','des');
 			} else {
 				$('#imgc3').attr('src','Images/b64.jpg');
+				$('#img10').attr('src','Images/bin4.jpg');
+				if (screenval == "col") {
+					$('#imscreen').attr('src','Images/bin6.jpg');
+				} else {
+					$('#imscreen').attr('src','Images/bin7.jpg');
+				}
 				document.getElementById('btnc3').setAttribute('data-value','on');
+				document.getElementById('screen').setAttribute('data-value2','act');
 			}
 		});
 
