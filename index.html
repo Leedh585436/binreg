@@ -237,22 +237,25 @@
 		});
 		$('#mode2').click(function(){
 			var value = document.getElementById('mode2').getAttribute('data-value');
-			if (value == "off") {
-				$('#imgm1').attr('src','Images/b00.jpg');
-				$('#imgm2').attr('src','Images/b05.jpg');
-				$('#imgm3').attr('src','Images/b01.jpg');
-				$('#modev').text('Mode caméra');
-				document.getElementById('mode1').setAttribute('data-value','off');
-				document.getElementById('mode2').setAttribute('data-value','on');
-				document.getElementById('mode3').setAttribute('data-value','off');
-			} else {
-				$('#imgm1').attr('src','Images/b03.jpg');
-				$('#imgm2').attr('src','Images/b02.jpg');
-				$('#imgm3').attr('src','Images/b01.jpg');
-				$('#modev').text('Mode manuel');
-				document.getElementById('mode1').setAttribute('data-value','on');
-				document.getElementById('mode2').setAttribute('data-value','off');
-				document.getElementById('mode3').setAttribute('data-value','off');
+			var valuecam = document.getElementById('screen').getAttribute('data-value2');
+			if (valuecam == "act") {
+				if (value == "off") {
+					$('#imgm1').attr('src','Images/b00.jpg');
+					$('#imgm2').attr('src','Images/b05.jpg');
+					$('#imgm3').attr('src','Images/b01.jpg');
+					$('#modev').text('Mode caméra');
+					document.getElementById('mode1').setAttribute('data-value','off');
+					document.getElementById('mode2').setAttribute('data-value','on');
+					document.getElementById('mode3').setAttribute('data-value','off');
+				} else {
+					$('#imgm1').attr('src','Images/b03.jpg');
+					$('#imgm2').attr('src','Images/b02.jpg');
+					$('#imgm3').attr('src','Images/b01.jpg');
+					$('#modev').text('Mode manuel');
+					document.getElementById('mode1').setAttribute('data-value','on');
+					document.getElementById('mode2').setAttribute('data-value','off');
+					document.getElementById('mode3').setAttribute('data-value','off');
+				}
 			}
 		});
 		$('#mode3').click(function(){
